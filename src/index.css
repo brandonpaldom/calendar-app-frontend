@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-[2rem] font-bold leading-tight;
+  }
+  h2 {
+    @apply text-[1.5rem] font-bold leading-tight;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-semibold transition-colors duration-300;
+  }
+  .btn-primary {
+    @apply bg-blue-500 text-white hover:bg-blue-600;
+  }
+  .btn-secondary {
+    @apply bg-blue-50 text-blue-500 hover:bg-blue-100;
+  }
+  .btn-neutral {
+    @apply bg-neutral-100 text-neutral-700 hover:bg-neutral-200;
+  }
+  .btn-error {
+    @apply bg-red-500 text-white hover:bg-red-600;
+  }
+  .fab-btn {
+    @apply w-14 h-14 flex items-center justify-center transition-colors duration-300 rounded-full fixed;
+  }
+  .input {
+    @apply mt-1 block w-full rounded-md bg-neutral-100 border-transparent focus:border-neutral-500 focus:bg-white focus:ring-0;
+  }
+  .input-error {
+    @apply border-red-500 text-red-500 placeholder-red-500 focus:border-red-500 focus:ring-red-500;
+  }
+  .input-error-message {
+    @apply text-red-500 text-sm mt-1;
+  }
+  .link {
+    @apply text-blue-500 font-medium underline;
+  }
+}
